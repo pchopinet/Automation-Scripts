@@ -8,6 +8,13 @@ install_package(){
 	dpkg -i $1
 }
 
+remove_package(){
+	dpkg -r $1
+}
+
 download_package(){
 	apt-get install $1
 }
+
+
+

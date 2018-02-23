@@ -5,3 +5,7 @@ mkcd(){
 	cd $1
 }
 
+rmadir(){
+	rm -rf $1
+}
+
