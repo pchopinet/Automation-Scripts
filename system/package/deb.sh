@@ -1,23 +1,23 @@
 #!/bin/bash
 
-check_package(){
+deb-check-package(){
 	dpkg -s $1 > /dev/null 2>&1
 }
 
-install_package_file(){
+deb-install-package-from-file(){
 	dpkg -i $1
 }
 
-remove_package(){
+deb-remove-package(){
 	dpkg -r $1
 }
 
-install_package(){
+deb-install-package(){
 	apt-get install $1 -y
 }
 
-download_package(){
-
+deb-download_package(){
+    
 }
 
 

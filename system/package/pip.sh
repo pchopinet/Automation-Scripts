@@ -1,18 +1,18 @@
 #!/bin/bash
  
-check_package(){
+pip-check-package(){
 	pip list | grep $1
 }
 
-install_package(){
+pip-install-package(){
 	pip install $1
 }
 
-remove_package(){
+pip-remove-package(){
 
 }
 
-download_package(){
+pip-download-package(){
 
 }
 

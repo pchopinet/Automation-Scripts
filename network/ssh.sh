@@ -1,8 +1,8 @@
+#!/bin/bash
 
 ssh-get-files(){
 	scp -r $1:$2 $3
 }
-
 
 ssh-command-cluster(){
 	filename="$1"
