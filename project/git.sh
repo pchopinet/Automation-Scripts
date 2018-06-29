@@ -2,7 +2,7 @@
 
 # TODO check input
 
-git_push_all(){
+git-push-all(){
 	git add .
 	git commit -m $1
 	git push
