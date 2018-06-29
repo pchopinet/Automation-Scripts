@@ -15,3 +15,10 @@ ssh-command-cluster(){
 	done < "$filename"
 }
 
+ssh-test-process-run(){
+    username="$1"
+    ip="$2"
+    process="$3"
+
+    return $(ssh $username@$ip -q "ps xua |  tr -s ' ' | cut -d ' ' -f11 | grep -w $process | wc -l")
+}
